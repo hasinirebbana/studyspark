@@ -1,5 +1,7 @@
+const API_URL = "https://studyspark-l8x6.onrender.com";
+
 export async function generateFlashcards(topic) {
-  const response = await fetch("http://localhost:5000/api/generate", {
+  const response = await fetch(`${API_URL}/api/generate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
