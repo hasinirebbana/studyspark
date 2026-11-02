@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #20243a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.main-content {
+  width: min(700px, 92%);
+  margin: 40px auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.intro h2 {
+  color: #20243a;
+  font-size: 26px;
+}
+
+.prompt-section textarea {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: white;
+  color: #20243a;
+  font: inherit;
+  resize: vertical;
+}
+
+.prompt-section textarea::placeholder {
+  color: #6b7280;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 12px;
+  background: #4f46e5;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deck-section {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.flashcard {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 18px #00000012;
+  cursor: pointer;
+}
+
+.flashcard h3 {
+  font-size: 22px;
+}
+
+.card-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.progress-track {
+  height: 8px;
+  background: #e0e2ef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+}
+
+.loading-state,
+.error-state {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error-state {
+  color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    margin: 24px auto;
+  }
+
+  .intro h2 {
+    font-size: 22px;
+  }
+
+  .flashcard {
+    min-height: 180px;
+  }
+}
+.quiz-section {
+  margin-top: 40px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #00000012;
+}
+
+.quiz-section h3 {
+  margin-bottom: 20px;
+}
+
+.quiz-section button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.quiz-section .correct-answer {
+  background: #16a34a;
+}
+
+.quiz-section .wrong-answer {
+  background: #dc2626;
+}
